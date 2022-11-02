@@ -1,0 +1,36 @@
+* {margin: 0; padding: 0; box-sizing: border-box;} 
+.wrap {width: 100%; background-color: #96b7a1; max-width: 1930px; margin: 0 auto;}
+
+header {width: 100%; height: auto; background-color: #66868b;}
+nav {width: 90%; height: 100px; display: flex; justify-content: space-between; margin: 0 auto; align-items: center;}
+.icon {padding: 0 3px;}
+
+.logo {width: 100px;}
+
+li {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+
+.mainContent {display: flex; height: 800px; background-color: #8b6666;}
+
+.a-left {flex-basis: 40%;}
+.a-right {flex-basis: 60%;}
+
+
+/* 중간화면(태블릿 등) */
+@media all and (max-width: 960px){
+    nav ul li {display: none;}
+    .icon {display: flex; padding-bottom: 7px;}
+}
+/* 작은화면(스마트폰 등) */
+@media all and (max-width: 800px){
+    nav ul li {display: none;}
+    
+    .mainContent {flex-direction: column-reverse;}
+}
+/* pc */
+@media all and (min-width:960px){
+    nav ul {display: flex; justify-content: space-around; width: 40%;}
+    nav ul li {width: 25%; font-size: 1.3rem; text-align: center;}
+    .icon {display: none;}
+    
+}

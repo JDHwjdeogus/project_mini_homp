@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/area_main.css">
 </head>
 <body>
     <div class="wrap">
         <header>
             <nav>
                 <div class="logo">
-                    <div class="logoImg">
-                        <img src="" alt="">
-                    </div>
+                    <a href="">
+                        LOGO<img src="" alt="">
+                    </a>
                 </div>
                 <ul>
-                    <li>works</li>
-                    <li>trivia</li>
-                    <li>self-helf</li>
+                    <li><a href=""> works </a></li>
+                    <li><a href=""> trivia </a></li>
+                    <li><a href=""> self-help </a></li>
+                    <div class="icon">
+                        <i>icon</i>
+                    </div>
                 </ul>
                 <!-- <i>탭 및 모바일 화면의 메뉴 아이콘</i> -->
             </nav>
@@ -26,7 +30,7 @@
         <div class="main">
             <!-- 상단섹션 -->
             <section>
-                <section>
+                <section class="mainContent">
                     <article class="mainArticle a-left">
                         <!-- 글, 좌측 -->
                         <div class="a-left-Wrap">
@@ -76,13 +80,23 @@
                     </div>
                 </article>
                 
-                <article class="ownHobby">
+                <article class="goTOtrivia">
                     <!-- 취미 그림 갤러리: 구성 고민중 -->
-                    <div class="aritcleTitle">
-                        <h3>가끔 그림을 그립니다</h3>
-                        <p>그림을 클릭하면 더보기</p>
-                    </div>
-                    <div class="hGalWrap"></div>
+                    <section>
+                        <div class="tirviaTitle">
+                            <h3>가끔 그림을 그립니다</h3>
+                            <p>그림을 클릭하면 트리비아 페이지</p>
+                        </div>
+                        <div class="triviaImg"></div>
+                    </section>
+
+                    <section>
+                        <div class="tirviaTitle">
+                            <h3>기타 취미에 대한 서술</h3>
+                            <p>그림을 클릭하면 트리비아 페이지</p>
+                        </div>
+                        <div class="triviaImg"></div>
+                    </section>
                 </article>
             </section>
         </div>
