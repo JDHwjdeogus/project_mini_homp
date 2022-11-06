@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0; box-sizing: border-box;} 
-.wrap {width: 100%; background-color: #96b7a1; max-width: 1930px; margin: 0 auto;}
+.wrap {width: 100%; background-color: #96b7a1; margin: 0 auto;}
 
 header {width: 100%; max-width: 1930px; height: auto; background-color: #232025aa; color: #eadff3; position: fixed; z-index: 10;}
 .menu_nav {width: 90%; height: 100px; display: flex; justify-content: space-between; margin: 0 auto; align-items: center;}
@@ -30,7 +30,10 @@ a {text-decoration: none; cursor: pointer;}
 .Image a img {max-width: 100%;}
 /* 이미지 최대 크기 480*480 */
 
-.aritcleTitle {width: 100vw; height: 200px; background-color: #9f73c9; max-width: 800px;}
+.aritcleTitle {width: 100vw; height: 180px; background-color: #9f73c9; max-width: 800px;}
+.aritcleTitle h3, .aritcleTitle p {display: block; margin: 0 auto; width: 80%; height: auto;}
+.aritcleTitle h3 {padding-top: 5%; margin-bottom: 2%; font-size: 1.5rem;}
+.aritcleTitle p {}
 .pGalWrap {width: 100%; height: 900px;}
 .tGalWrap {height: 700px;}
 
