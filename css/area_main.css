@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0; box-sizing: border-box;} 
-.wrap {width: 100%; background-color: #96b7a1; margin: 0 auto;}
+.wrap {width: 100%; background-color: #c9cbc3; margin: 0 auto; display: flex; flex-direction: column;}
 
 header {width: 100%; max-width: 1930px; height: auto; background-color: #232025aa; color: #eadff3; position: fixed; z-index: 10;}
 .menu_nav {width: 90%; height: 100px; display: flex; justify-content: space-between; margin: 0 auto; align-items: center;}
@@ -10,7 +10,7 @@ li {list-style: none;}
 a {text-decoration: none; cursor: pointer;}
 
 /* footer 밑에 흰 여백 생기면 여기 수정 */
-.main {max-height: 3400px;}
+/* .main {max-height: 3500px;} */
 .mainContent {display: flex; height: 100vh; background-color: #1b1a1c; padding: 100px 0 0; max-height: 1000px;}
 .a-left {flex-basis: 40%; background-color: #1b1a1c; color: #dedde0;}
 .a-right {flex-basis: 60%; background-color: #f2eaea; color: #251c35;}
@@ -18,32 +18,40 @@ a {text-decoration: none; cursor: pointer;}
 
 .a-left-Wrap {position: relative;}
 .leftPara {left: 6vw; top: 22vh;}
-.sayHi {font-size: 1.3rem;}
-.sayHi span {font-size: 2rem;}
+.sayHi {font-size: 2.4rem;}
+.sayHi span {font-size: 3.3rem;}
 .longIntro {margin: 20px 0 0;}
-.longIntro h2 {font-size: 2rem;}
-
+.longIntro h2 {font-size: 2.5rem;}
+.longIntro h3 {font-size: 1.5rem; margin: 10px 0 0;}
 
 .a-right-Wrap {position: relative;}
 .TheresNoSelfi {top: 2vh; left: 5vw;}
 .Image {background-color: #4a4a4a4d; max-width: 850px; min-width: 470px; width: 50vw; height: auto; position: absolute; top: 10vh; right: 10%;}
 .Image a img {max-width: 100%;}
 /* 이미지 최대 크기 480*480 */
+.TheresNoSelfi {font-size: 1.3rem; font-weight: 600;}
 
 .aritcleTitle {width: 100vw; height: 180px; background-color: #9f73c9; max-width: 800px;}
 .aritcleTitle h3, .aritcleTitle p {display: block; margin: 0 auto; width: 80%; height: auto;}
 .aritcleTitle h3 {padding-top: 5%; margin-bottom: 2%; font-size: 1.5rem;}
-.aritcleTitle p {}
-.pGalWrap {width: 100%; height: 900px;}
+.aritcleTitle p {line-height: 25px;}
+
+.pGalWrap {width: 94%; height: 900px; margin: 0 auto;}
+.pGalSlideWrap {overflow: hidden; display: flex; margin: 5% auto;}
+.pGalSlide {margin: 0 2%;}
+.pGalSlide:first-child {margin-left: 0;}
+.projPic {width: 1080px; height: 680px; background-color: #7ab78e;}
+.projPara {width: 1080px; height: 100px; background-color: #43a163; margin: 10px 0;}
+
 .tGalWrap {height: 700px;}
+.trivPic {margin: 40px 0 0 5%; height: 660px; width: 78%; background-color: #251c35; max-width: 630px;}
 
 .ownproTitle {max-width: 960px;}
 
-.goTOtrivia {display: flex;}
-.goTOtrivia section {width: 50%;}
+.goTOtrivia {display: flex; justify-content: space-around;}
 
 
-footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025; color: #eadff3; display: flex; align-items: center;}
+footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025; color: #eadff3; display: flex; align-items: center; margin-top: auto;}
 .copytight {margin: 0 auto;}
 
 /* 작은화면 */
@@ -55,10 +63,22 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025;
     .a-left {flex-basis: 36%;}
     .a-right {flex-basis: 64%;}
 
-    .Image {height: auto; min-width: 400px;}
+    .sayHi {font-size: 1.3rem;}
+    .sayHi span {font-size: 2rem;}
+    .longIntro {margin: 20px 0 0;}
+    .longIntro h2 {font-size: 2rem;}
+    .longIntro h3 {font-size: 1rem; margin: 10px 0 0;}
+    .TheresNoSelfi {font-size: 1.1rem; font-weight: 600;}
+
+    .Image {height: auto; max-width: 450px;}
+
+    .pGalWrap {height: 600px;}
+    .projPic {width: 750px; height: 450px;}
+    .projPara {width: 750px; height: 100px;}
 
     .aritcleTitle {width: 100%;}
     .goTOtrivia section {width: 100%;}
+    .trivPic {width: 90%; margin: 40px auto; height: 430px;}
 }
 
 /* 중간화면 */
@@ -68,12 +88,15 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025;
     .leftPara {left: 5vw; top: 4vh;}
     .TheresNoSelfi {top: 0; left: 5vw;}
     .Image {top: 6vh; left: 2vw; width: 550px; right: 20px;}
+
 }
 
 /* 기본화면 */
 @media all and (max-width: 1610px){
     .goTOtrivia {flex-direction: column;}
     .tGalWrap {height: 500px;}
+    
+    .trivPic {margin: 40px 0 0 5%; height: 450px;}
 }
 @media all and (min-width:960px){
         nav ul {display: flex; justify-content: space-around; width: 40%;}
