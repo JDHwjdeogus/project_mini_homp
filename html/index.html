@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c601cce34.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrap">
@@ -20,12 +21,12 @@
                     </a>
                 </div>
                 <ul>
-                    <li><a href=""> project </a></li>
-                    <li><a href=""> skill </a></li>
-                    <li><a href=""> contact </a></li>
+                    <li><a href="#project"> project </a></li>
+                    <li><a href="#skills"> skill </a></li>
+                    <li><a href="#contact_archive"> contact </a></li>
                     <li><a href="gallery.html"> gallery </a></li>
                     <div class="icon">
-                        <i>icon</i>
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </ul>
                 <!-- <i>탭 및 모바일 화면의 메뉴 아이콘</i> -->
@@ -40,16 +41,10 @@
                         <article class="a-left-Wrap">
                             <div class="para leftPara sayHi">
                                 <h1>안녕하세요,</h1>
-                                <h1> <span>정다현</span> 입니다.</h1>
+                                <h1> <span>정다현</span>의 포트폴리오</h1>
+                                <h1>입니다.</h1>
                             </div>
-                            <div class="para leftPara longIntro">
-                                <h2>
-                                    css에 진심인 <br> 프론트엔드 개발자
-                                </h2>
-                                <h3>
-                                    ...가 되고 싶습니다.
-                                </h3>
-                            </div>
+                            
                         </article>
                     </section>
                     <section class="mainArticle a-right">
@@ -71,7 +66,7 @@
 
             <section class="below">
                 <!-- 프로젝트 페이지 -->
-                <article class="ownProject">
+                <article class="ownProject" id="project">
                     <div class="aritcleTitle">
                         <h3>project</h3>
                     </div>
@@ -100,13 +95,17 @@
                 </article>
                 
                 <!-- 스킬 -->
-                <article class="skills">
+                <article class="skills" id="skills">
                     <div class="aritcleTitle">
                         <h3>skills</h3>
                     </div>
                     <section class="skillsWrap fixMaxWidth">
                         <div class="sOption front">
-                            <div class="programLogos"></div>
+                            <div class="programLogos">
+                                <i class="fa-brands fa-html5"></i> html
+                                <i class="fa-brands fa-css3-alt"></i> css
+                                <i class="fa-brands fa-square-js"></i> js
+                            </div>
                         </div>
                         <div class="sOption design">
                             <div class="programLogos"></div>
@@ -118,16 +117,18 @@
                 </article>
 
                 <!-- 컨택 & 아카이브 -->
-                <article class="info">
+                <article class="info" id="contact_archive">
                     <div class="aritcleTitle">
                         <h3>contact & archive</h3>
                     </div>
                     <div class="infoWrap fixMaxWidth">
                         <section class="contact">
-                            <div class="cANDa"></div>
-                        </section>
-                        <section class="archive">
-                            <div class="cANDa"></div>
+                            <div class="cANDa">
+                                <i class="fa-brands fa-mastodon"></i> 마스토돈
+                                <i class="fa-solid fa-envelope"></i> 이메일
+                                <i class="fa-brands fa-discord"></i> 디스코드
+                                <i class="fa-brands fa-github"></i>  깃허브
+                            </div>
                         </section>
                     </div>
                 </article>

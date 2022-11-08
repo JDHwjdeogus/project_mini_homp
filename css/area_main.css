@@ -1,5 +1,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box;} 
-.wrap {width: 100%; background-color: #c9cbc3; margin: 0 auto; display: flex; flex-direction: column;}
+html {scroll-behavior: smooth;}
+.wrap {width: 100%; background-color: #1b1a1c; margin: 0 auto; display: flex; flex-direction: column;}
 .fixMaxWidth {margin: 0 auto; max-width: 1300px;}
 
 header {width: 100%; height: auto; background-color: #232025aa; color: #eadff3; position: fixed; z-index: 10;}
@@ -9,29 +10,28 @@ header {width: 100%; height: auto; background-color: #232025aa; color: #eadff3; 
 .menu_nav a {color: #eadff3;}
 li {list-style: none;}
 a {text-decoration: none; cursor: pointer;}
+.icon i {font-size: 2rem;}
 
-/* footer 밑에 흰 여백 생기면 여기 수정 */
-.main {width: 100%;}
-.mainContent {display: flex; height: 100vh; background-color: #1b1a1c; padding: 100px 0 0; max-height: 1000px;}
+.main {width: 100%; padding-top: 100px;}
+.mainContent {display: flex; height: 90vh; background-color: #1b1a1c; max-height: 1000px;}
 .a-left {flex-basis: 40%; background-color: #1b1a1c; color: #dedde0; overflow: hidden;}
 .a-right {flex-basis: 60%; background-color: #f2eaea; color: #251c35; overflow: hidden;}
 .para {position: relative; width: 90%; font-family: 'Gowun Dodum', sans-serif;}
 
 .a-left-Wrap {position: relative;}
-.leftPara {left: 6vw; top: 22vh;}
-.sayHi {font-size: 2.4rem;}
+.leftPara {left: 6vw; top: 10vh;}
+.sayHi {font-size: 2rem;}
 .sayHi span {font-size: 3.3rem;}
 .longIntro {margin: 20px 0 0;}
 .longIntro h2 {font-size: 2.5rem;}
 .longIntro h3 {font-size: 1.5rem; margin: 10px 0 0;}
 
 .a-right-Wrap {position: relative;}
-.Image {background-color: #4a4a4a4d; max-width: 850px; width: 45vw; height: auto; position: absolute; top: 10vh; right: 5%;}
+.Image {max-width: 750px; width: 45vw; height: auto; position: absolute; bottom: -79vh; right: 3%;}
 .Image a img {max-width: 100%;}
-/* 이미지 최대 크기 480*480 */
 .TheresNoSelfi {font-size: 1.3rem; font-weight: 600; top: 2vh; left: 5vw;}
 
-.aritcleTitle {width: auto; height: auto; max-width: 800px; font-size: 1.5rem; margin: 0 auto; padding: 6vh 0 0; text-align: center;}
+.aritcleTitle {width: auto; height: auto; max-width: 800px; font-size: 2rem; margin: 0 auto; padding: 6vh 0; text-align: center;}
 
 .ownProject {background-color: #cd4d4d; height: auto; padding-bottom: 5%;}
 .pGalWrap {width: 94%; height: auto; margin: 0 auto;}
@@ -39,20 +39,19 @@ a {text-decoration: none; cursor: pointer;}
 .pGalList {display: flex; height: 60vh; width: 100%; margin: 10vh auto; background-color: #727272;
             clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);}
 .projPic {flex-basis: 28%; background-color: #cec8bd;}
-.projScreenshot {margin: 15% auto; background-color: #1b1a1c; width: 23vw; height: auto; max-width: 440px; min-width: 300px;}
+.projScreenshot {margin: 20% auto; width: 23vw; height: auto; max-width: 460px; min-width: 360px;}
 .projScreenshot img {max-width: 100%; margin: 0 auto;}
-.projPara {flex-basis: 70%; background-color: #a69277; display: flex; flex-direction: column; border-left: 2px dashed #232025;}
+.projPara {flex-basis: 72%; background-color: #a69277; display: flex; flex-direction: column; border-left: 2px dashed #232025;}
 .projPara div {margin: 10px auto; width: 80%;}
 
 .skills {background-color: #bfb67a;}
-.skills section {display: flex;}
-.skillsWrap {padding-bottom: 10vh;}
-.sOption {flex-basis: 33.3%;}
-.programLogos {height: 80vh;}
+.skillsWrap {padding: 0 0 10vh; display: flex; justify-content: space-around;}
+.sOption {flex-basis: 30%; background-color: #dedde0;}
+.programLogos {height: 70vh;}
 
 .info {background-color: #4b5077; height: auto;}
-.infoWrap {width: auto; height: 100vh; display: flex; padding: 10vh 0;}
-.infoWrap section {flex-basis: 48%; justify-content: space-around; margin: 0 auto; height: 88%; width: 95%; background-color: #bdb0da;}
+.infoWrap {max-width: 1080px; height: auto; display: flex; padding: 0 0 10vh;}
+.infoWrap section {flex-basis: 64%; justify-content: space-around; margin: 0 auto; height: 70vh; width: 95%; background-color: #bdb0da;}
 
 footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025; color: #eadff3; display: flex; align-items: center; margin-top: auto;}
 .copytight {margin: 0 auto;}
@@ -63,8 +62,8 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025;
     .icon {display: flex; padding-bottom: 7px;}
     
     .mainContent {flex-direction: column-reverse;}
-    .a-left {flex-basis: 36%;}
-    .a-right {flex-basis: 64%;}
+    .a-left {flex-basis: 36%; min-height: 40vh;}
+    .a-right {flex-basis: 64%; min-height: 10vh;}
     
     .leftPara {left: 5vw; top: 4vh;}
     .sayHi {font-size: 1.3rem;}
@@ -74,25 +73,31 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025;
     .longIntro h3 {font-size: 1rem; margin: 10px 0 0;}
     
     .a-right-Wrap {margin: 0 auto;}
-    .TheresNoSelfi {font-size: 1.1rem; font-weight: 600; top: 2vh; left: 5vw;}
-    .Image {height: auto; max-width: 450px; top: 10vh; left: 3vw;}
+    .TheresNoSelfi {font-size: 1.1rem; font-weight: 600; top: 1vh; left: 5vw;}
+    .Image {height: auto; max-width: 94vw; bottom: -52vh; right: 3vw;}
 
-    .pGalList {height: 100vh;  flex-direction: column;
+    .aritcleTitle {width: 100%; padding: 3vh 0 0;}
+    
+    .pGalList {height: 90vh;  flex-direction: column; margin: 5vh auto; 
                 clip-path: polygon(10% 0, 90% 0, 100% 6%, 100% 94%, 90% 100%, 10% 100%, 0% 94%, 0% 6%);}
     .projScreenshot {margin: 0 auto;}
+    .projPara {border-left: none; border-top: 2px dashed #232025;}
     .projPara div {width: 85%;}
 
-    .aritcleTitle {width: 100%;}
+    .skillsWrap {flex-direction: column;}
+    .sOption {margin: 2% auto; width: 90%;}
+    .programLogos {height: 50vh;}
+
     .info {height: auto; padding-bottom: 5%;}
-    .infoWrap {flex-direction: column; height: 100%; justify-content: space-around;}
-    .infoWrap section {flex-basis: 40%;}
+    .infoWrap {flex-direction: column; height: 100%; justify-content: space-around; padding: 3vh 0;}
+    .infoWrap section {margin: 2% auto; height: 40vh;}
     .cANDa {width: 90%; margin: 40px auto; height: 430px;}
 }
 
 /* 중간화면 */
-@media all and (max-width: 1100px){
+@media all and (max-width: 1300px){
     .mainContent {height: 100vh; max-height: 1000px;}
-    .Image {width: 550px; right: 20px;}
+    .Image {width: 570px; right: 20px;}
 }
 
 /* 기본화면 */
