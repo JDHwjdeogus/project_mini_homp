@@ -13,7 +13,7 @@
 <body>
     <div class="wrap">
         <header>
-            <nav class="menu_nav">
+            <nav class="menu_nav fixMaxWidth">
                 <div class="logo">
                     <a href="index.html">
                         LOGO<img src="" alt="">
@@ -35,9 +35,9 @@
             <!-- 메인페이지 -->
             <section class="upper">
                 <section class="mainContent">
-                    <article class="mainArticle a-left">
+                    <section class="mainArticle a-left">
                         <!-- 글, 좌측 -->
-                        <div class="a-left-Wrap">
+                        <article class="a-left-Wrap">
                             <div class="para leftPara sayHi">
                                 <h1>안녕하세요,</h1>
                                 <h1> <span>정다현</span> 입니다.</h1>
@@ -50,85 +50,86 @@
                                     ...가 되고 싶습니다.
                                 </h3>
                             </div>
-                        </div>
-                    </article>
-                    <article class="mainArticle a-right">
+                        </article>
+                    </section>
+                    <section class="mainArticle a-right">
                         <!-- 그림, 우측 -->
-                        <div class="a-right-Wrap">
+                        <article class="a-right-Wrap">
                             <div class="Image">
-                                <a href="trivia.html" style="display: block;">
+                                <a href="" style="display: block;">
                                     <img src="../img/main_tempImg.jpg" alt="">
                                 </a>
                             </div>
                             <div class="para rightPara TheresNoSelfi">
                                 <p> 저는 사진이 없습니다. 대신 제 그림을 봐주세요. </p>
-                                <p> 그림 클릭 시 trivia 페이지로 연결됩니다.</p>
+                                <p> 그림 클릭 시 gallery 페이지로 연결됩니다.</p>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                    </section>
                 </section>
             </section>
-            <!-- 프로젝트 페이지 -->
+
             <section class="below">
+                <!-- 프로젝트 페이지 -->
                 <article class="ownProject">
-                    <div class="aritcleTitle ownproTitle">
+                    <div class="aritcleTitle">
                         <h3>project</h3>
                     </div>
-                    <div class="pGalWrap">
+                    <div class="pGalWrap fixMaxWidth">
                         <div class="pGalListWrap">
                             <div class="pGalList">
                                 <div class="projPic">
-                                    사진(혹은 스크린샷)<img src="" alt="">
+                                    <div class="projScreenshot">
+                                        <img src="../img/main_tempImg.jpg" alt="">
+                                    </div>
                                 </div>
                                 <div class="projPara">
-                                    <p>메인페이지 러프.</p>
-                                    <p>html로 구현하기 전 화면 구성을 간단하게 스케치.</p>
+                                    <div>
+                                        <h3>Ne일기</h3>
+                                        <p>구상중인 프로젝트</p>
+                                        <p>좋아하는 것들을 에스테틱처럼 모아서 대표 화면을 꾸미는 블로그 성격의 사이트</p>
+                                    </div>
+                                    <div>
+                                        <h3>기능</h3>
+                                        <p>커스터마이징 게임, 게시판 형식 블로그 리스트</p>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <div class="pGalList">
-                                <div class="projPic">
-                                    사진(혹은 스크린샷)<img src="" alt="">
-                                </div>
-                                <div class="projPara">
-                                    <p>html & css로 간단히 구현한 메인페이지.</p>
-                                    <p>이런 기능이 있었으면 좋겠다고 생각하며 화면단 작업.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="pGalList">
-                                <div class="projPic">
-                                    사진(혹은 스크린샷)<img src="" alt="">
-                                </div>
-                                <div class="projPara">
-                                    <p>html & css로 간단히 구현한 메인페이지 - 디자인에 집중.</p>
-                                    <p>디자인을 바꾸고 테마를 조금 더 명확히 했다.</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </article>
                 
-                <article class="info">
-                    <!-- 취미 그림 갤러리: 구성 고민중 -->
-                    <section>
-                        <div class="aritcleTitle tirviaTitle">
-                            <h3>contact</h3>
+                <!-- 스킬 -->
+                <article class="skills">
+                    <div class="aritcleTitle">
+                        <h3>skills</h3>
+                    </div>
+                    <section class="skillsWrap fixMaxWidth">
+                        <div class="sOption front">
+                            <div class="programLogos"></div>
                         </div>
-                        <div class="infoWrap">
-                            <div class="cANDa"></div>
+                        <div class="sOption design">
+                            <div class="programLogos"></div>
+                        </div>
+                        <div class="sOption back">
+                            <div class="programLogos"></div>
                         </div>
                     </section>
+                </article>
 
-                    <section>
-                        <div class="aritcleTitle tirviaTitle">
-                            <h3>archive</h3>
-                        </div>
-                        <div class="infoWrap">
+                <!-- 컨택 & 아카이브 -->
+                <article class="info">
+                    <div class="aritcleTitle">
+                        <h3>contact & archive</h3>
+                    </div>
+                    <div class="infoWrap fixMaxWidth">
+                        <section class="contact">
                             <div class="cANDa"></div>
-                        </div>
-                    </section>
+                        </section>
+                        <section class="archive">
+                            <div class="cANDa"></div>
+                        </section>
+                    </div>
                 </article>
             </section>
         </div>
