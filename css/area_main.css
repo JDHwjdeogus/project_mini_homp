@@ -39,21 +39,22 @@ a {text-decoration: none; cursor: pointer;}
 .ownProject {background-color: #cd4d4d; height: auto; padding-bottom: 5%;}
 .pGalWrap {width: 94%; height: auto; margin: 0 auto;}
 .pGalListWrap {display: flex; flex-direction: column;}
-.pGalList {display: flex; height: 75vh; width: 100%; margin: 0 auto; background-color: #cabca6; box-shadow: 0 0 5px 5px rgb(66, 62, 58);
+.pGalList {display: flex; height: 75vh; width: 100%; margin: 0 auto; background-color: #cabca6; 
             clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);}
 .projPic {flex-basis: 28%;}
-.projScreenshot {margin: 35% auto; width: 23vw; height: auto; max-width: 500px; min-width: 440px;}
+.projSlideWrap {width: auto; height: auto;}
+.projScreenshot {overflow: hidden; margin: 32% auto; width: 23vw; height: 360px; max-width: 500px; min-width: 440px;}
 .projScreenshot img {max-width: 100%; margin: 0 auto;}
 
-.projPara {flex-basis: 72%; border-left: 2px dashed #232025; font-family: 'Gowun Dodum', sans-serif;}
+.projPara {flex-basis: 72%; border-left: 2px dashed #796049; font-family: 'Gowun Dodum', sans-serif;}
 .projParaWrap {display: flex; flex-wrap: wrap; margin: 1.5vh 0 0 1vw; width: 90%; height: 96%; border: 1px solid #963d3d;}
 .projParaWrap div {border: 1px solid #963d3d; padding: 1%;}
 .projParaWrap div:first-child {flex-basis: 100%; height: 60%;}
 .projParaWrap div:nth-child(2) {flex-basis: 70%; height: 40%;}
 .projParaWrap div:last-child {flex-basis: 30%; height: 40%;}
 
-.projParaWrap div h3 {font-size: 1.6rem;}
-.projParaWrap div p {font-size: 1.1rem; line-height: 4vh;}
+.projParaWrap div h3 {font-size: 1.6rem; font-weight: bolder; color: #4d3e31; margin-bottom: 10px;}
+.projParaWrap div p {font-size: 1.1rem; line-height: 3vh; font-weight: bolder; color: #362e27;}
 
 
 .skills {background-color: #c0bb9d;}
@@ -105,7 +106,7 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #1b1a1c;
     .pGalList {height: 90vh;  flex-direction: column; margin: 5vh auto; 
                 clip-path: polygon(10% 0, 90% 0, 100% 6%, 100% 94%, 90% 100%, 10% 100%, 0% 94%, 0% 6%);}
     .projScreenshot {margin: 0 auto;}
-    .projPara {border-left: none; border-top: 2px dashed #232025;}
+    .projPara {border-left: none; border-top: 2px dashed #796049;}
     .projPara div {width: 80%;}
     .projParaWrap {margin: 1vh auto; height: 94%;}
     .projParaWrap div:first-child {flex-basis: 100%; height: 58%;}
