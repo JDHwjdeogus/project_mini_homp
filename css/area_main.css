@@ -14,46 +14,70 @@ a {text-decoration: none; cursor: pointer;}
 
 .main {width: 100%; padding-top: 100px;}
 .mainContent {display: flex; height: 90vh; background-color: #1b1a1c; max-height: 1000px;}
-.a-left {flex-basis: 40%; background-color: #1b1a1c; color: #dedde0; overflow: hidden;}
-.a-right {flex-basis: 60%; background-color: #f2eaea; color: #251c35; overflow: hidden;}
+.a-left {flex-basis: 37%; background-color: #1b1a1c; color: #dedde0; overflow: hidden;}
+.a-right {flex-basis: 63%; background-color: #f2eaea; color: #251c35; overflow: hidden;}
 .para {position: relative; width: 90%; font-family: 'Gowun Dodum', sans-serif;}
 
 .a-left-Wrap {position: relative;}
-.leftPara {left: 6vw; top: 10vh;}
-.sayHi {font-size: 2rem;}
+.leftPara {left: 7vw; top: 8vh;}
+.sayHi {font-size: 2rem; line-height: 8vh; left: 8vw;}
 .sayHi span {font-size: 3.3rem;}
 .longIntro {margin: 20px 0 0;}
 .longIntro h2 {font-size: 2.5rem;}
 .longIntro h3 {font-size: 1.5rem; margin: 10px 0 0;}
+.personalInfo {top: 16vh; left: 4vw;}
+.conInfo {font-size: 1.3rem;}
+.conInfo i {font-size: 2.5rem; margin: 1.5vh;}
 
 .a-right-Wrap {position: relative;}
 .Image {max-width: 750px; width: 45vw; height: auto; position: absolute; bottom: -79vh; right: 3%;}
 .Image a img {max-width: 100%;}
 .TheresNoSelfi {font-size: 1.3rem; font-weight: 600; top: 2vh; left: 5vw;}
 
-.aritcleTitle {width: auto; height: auto; max-width: 800px; font-size: 2rem; margin: 0 auto; padding: 6vh 0; text-align: center;}
+.aritcleTitle {width: auto; height: auto; max-width: 800px; font-size: 2rem; margin: 0 auto; padding: 6vh 0; text-align: center; font-family: 'Gowun Dodum', sans-serif; font-size: 2.6rem;}
 
 .ownProject {background-color: #cd4d4d; height: auto; padding-bottom: 5%;}
 .pGalWrap {width: 94%; height: auto; margin: 0 auto;}
 .pGalListWrap {display: flex; flex-direction: column;}
-.pGalList {display: flex; height: 60vh; width: 100%; margin: 10vh auto; background-color: #727272;
+.pGalList {display: flex; height: 75vh; width: 100%; margin: 0 auto; background-color: #cabca6; box-shadow: 0 0 5px 5px rgb(66, 62, 58);
             clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);}
-.projPic {flex-basis: 28%; background-color: #cec8bd;}
-.projScreenshot {margin: 20% auto; width: 23vw; height: auto; max-width: 460px; min-width: 360px;}
+.projPic {flex-basis: 28%;}
+.projScreenshot {margin: 35% auto; width: 23vw; height: auto; max-width: 500px; min-width: 440px;}
 .projScreenshot img {max-width: 100%; margin: 0 auto;}
-.projPara {flex-basis: 72%; background-color: #a69277; display: flex; flex-direction: column; border-left: 2px dashed #232025;}
-.projPara div {margin: 10px auto; width: 80%;}
 
-.skills {background-color: #bfb67a;}
+.projPara {flex-basis: 72%; border-left: 2px dashed #232025; font-family: 'Gowun Dodum', sans-serif;}
+.projParaWrap {display: flex; flex-wrap: wrap; margin: 1.5vh 0 0 1vw; width: 90%; height: 96%; border: 1px solid #963d3d;}
+.projParaWrap div {border: 1px solid #963d3d; padding: 1%;}
+.projParaWrap div:first-child {flex-basis: 100%; height: 60%;}
+.projParaWrap div:nth-child(2) {flex-basis: 70%; height: 40%;}
+.projParaWrap div:last-child {flex-basis: 30%; height: 40%;}
+
+.projParaWrap div h3 {font-size: 1.6rem;}
+.projParaWrap div p {font-size: 1.1rem; line-height: 4vh;}
+
+
+.skills {background-color: #c0bb9d;}
 .skillsWrap {padding: 0 0 10vh; display: flex; justify-content: space-around;}
 .sOption {flex-basis: 30%; background-color: #dedde0;}
-.programLogos {height: 70vh;}
+.programLogos {max-width: 10rem; margin: 2vh auto;}
+.front .programLogos:last-child {max-width: 15rem; margin: 4vh auto 6vh;}
+.programLogos img {margin: 0 auto; max-width: 100%;}
 
-.info {background-color: #4b5077; height: auto;}
+
+.info {background-color: #312d45; height: auto;}
+.info .aritcleTitle {color: #dedde0; text-shadow: 2px 2px 2px #0b0b3a, 0 0 1em #d8cfea, 0 0 0.2em #2d8cdf;}
 .infoWrap {max-width: 1080px; height: auto; display: flex; padding: 0 0 10vh;}
-.infoWrap section {flex-basis: 64%; justify-content: space-around; margin: 0 auto; height: 70vh; width: 95%; background-color: #bdb0da;}
+.infoWrap section {flex-basis: 64%; justify-content: space-around; margin: 0 auto; height: auto; width: 95%; background-color: #bcb5ca; box-shadow: 0px 0px 10px 5px #6c7be6; border-radius: 10px;}
+.cANDa {display: flex; width: 90%; margin: 40px auto; flex-wrap: wrap; color: #251c35; font-family: 'Gowun Dodum', sans-serif;}
+.cANDa i {flex-basis: 20%; font-size: 3rem; text-align: center; color: #4e4e94;}
+.cANDa span {flex-basis: 80%; font-size: 1.5rem; line-height: 45px;}
+.space {flex-basis: 20%;}
+.cANDa p {text-align: left; flex-basis: 80%; line-height: 2vh; font-size: 1rem; font-weight: 600; color: #70608d;}
+.contactLink a {color: #251c35;}
+.contactLink a:hover {font-weight: 600; font-size: 1.3rem; color: #1b0b54; transition: 0.6s;}
 
-footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025; color: #eadff3; display: flex; align-items: center; margin-top: auto;}
+
+footer {width: 100%; height: 15vh; max-height: 200px; background-color: #1b1a1c; color: #eadff3; display: flex; align-items: center; margin-top: auto;}
 .copytight {margin: 0 auto;}
 
 /* 작은화면 */
@@ -64,13 +88,13 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025;
     .mainContent {flex-direction: column-reverse;}
     .a-left {flex-basis: 36%; min-height: 40vh;}
     .a-right {flex-basis: 64%; min-height: 10vh;}
-    
-    .leftPara {left: 5vw; top: 4vh;}
-    .sayHi {font-size: 1.3rem;}
+    .a-left-Wrap {margin: 0 auto; display: flex; max-width: 480px; min-width: 370px; height: auto;}
+
+    .sayHi {font-size: 1.3rem; line-height: 5vh;}
     .sayHi span {font-size: 2rem;}
-    .longIntro {margin: 20px 0 0;}
-    .longIntro h2 {font-size: 2rem;}
-    .longIntro h3 {font-size: 1rem; margin: 10px 0 0;}
+    .personalInfo {top: 6vh;}
+    .conInfo {font-size: 1rem; line-height: 1vh;}
+    .conInfo i {font-size: 1.6rem; margin: 1vh;}
     
     .a-right-Wrap {margin: 0 auto;}
     .TheresNoSelfi {font-size: 1.1rem; font-weight: 600; top: 1vh; left: 5vw;}
@@ -82,16 +106,27 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #232025;
                 clip-path: polygon(10% 0, 90% 0, 100% 6%, 100% 94%, 90% 100%, 10% 100%, 0% 94%, 0% 6%);}
     .projScreenshot {margin: 0 auto;}
     .projPara {border-left: none; border-top: 2px dashed #232025;}
-    .projPara div {width: 85%;}
+    .projPara div {width: 80%;}
+    .projParaWrap {margin: 1vh auto; height: 94%;}
+    .projParaWrap div:first-child {flex-basis: 100%; height: 58%;}
+    .projParaWrap div:nth-child(2) {flex-basis: 70%; height: 42%;}
+    .projParaWrap div:last-child {flex-basis: 30%; height: 42%;}
+    .projParaWrap div h3 {font-size: 1.4rem; margin-bottom: 1vh;}
+    .projParaWrap div p {font-size: 1rem; line-height: 2.4vh;}
 
     .skillsWrap {flex-direction: column;}
-    .sOption {margin: 2% auto; width: 90%;}
-    .programLogos {height: 50vh;}
+    .sOption {margin: 2% auto; width: 90%; max-width: 390px;}
+    .programLogos {height: auto;}
 
     .info {height: auto; padding-bottom: 5%;}
     .infoWrap {flex-direction: column; height: 100%; justify-content: space-around; padding: 3vh 0;}
-    .infoWrap section {margin: 2% auto; height: 40vh;}
-    .cANDa {width: 90%; margin: 40px auto; height: 430px;}
+    .infoWrap section {margin: 2% auto; height: 40vh; max-width: 690px;}
+    .cANDa {width: 90%; margin: 40px auto;}
+
+    .cANDa i {font-size: 2.4rem; text-align: center;}
+    .cANDa span {font-size: 1.2rem; line-height: 40px;}
+    .cANDa p {text-align: left; line-height: 2vh; font-size: 0.9rem; font-weight: 600;}
+
 }
 
 /* 중간화면 */
