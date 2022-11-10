@@ -47,30 +47,34 @@
     <script src="https://kit.fontawesome.com/8c601cce34.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap" id="home">
         <header>
             <nav class="menu_nav fixMaxWidth">
                 <div class="logo">
                     <a href="index.html">
-                        LOGO<img src="" alt="">
+                        <img src="../img/logo.png" alt="">
                     </a>
                 </div>
                 <ul>
+                    <li><a href="#home">home</a></li>
                     <li><a href="#project"> project </a></li>
                     <li><a href="#skills"> skill </a></li>
                     <li><a href="#contact_archive"> contact </a></li>
-                    <li><a href="gallery.html"> gallery </a></li>
-                    <div class="icon">
+                    <!-- <li><a href="gallery.html"> gallery </a></li> -->
+                    <!-- <div class="icon">
                         <i class="fa-solid fa-bars"></i>
-                    </div>
+                    </div> -->
+
                 </ul>
-                <!-- <i>탭 및 모바일 화면의 메뉴 아이콘</i> -->
             </nav>
         </header>
+
         <div class="main">
             <!-- 메인페이지 -->
             <section class="upper">
                 <section class="mainContent">
+
+
                     <section class="mainArticle a-left">
                         <!-- 글, 좌측 -->
                         <article class="a-left-Wrap">
@@ -103,17 +107,19 @@
                             
                         </article>
                     </section>
+
+
                     <section class="mainArticle a-right">
                         <!-- 그림, 우측 -->
                         <article class="a-right-Wrap">
                             <div class="Image">
                                 <a href="" style="display: block;">
-                                    <img src="../img/main_tempImg.jpg" alt="">
+                                    <img src="../img/jdh.png" alt="">
                                 </a>
                             </div>
                             <div class="para rightPara TheresNoSelfi">
                                 <p> 저는 사진이 없습니다. 대신 제 그림을 봐주세요. </p>
-                                <p> 그림 클릭 시 gallery 페이지로 연결됩니다.</p>
+                                <!-- <p> 그림 클릭 시 gallery 페이지로 연결됩니다.</p> -->
                             </div>
                         </article>
                     </section>
@@ -121,6 +127,8 @@
             </section>
 
             <section class="below">
+
+
                 <!-- 프로젝트 페이지 -->
                 <article class="ownProject" id="project">
                     <div class="aritcleTitle">
@@ -129,16 +137,48 @@
                     <div class="pGalWrap fixMaxWidth">
                         <div class="pGalListWrap">
                             <div class="pGalList">
+
                                 <div class="projPic">
-                                    <div class="projScreenshot">
-                                        <div class="projSlideWrap">
-                                            <img src="../img/projectScreenshot_1.png" alt="">
-                                            <img src="../img/projectScreenshot_2.1.png" alt="">
-                                            <img src="../img/projectScreenshot_2.2.png" alt="">
-                                            <img src="../img/projectScreenshot_2.3.png" alt="">
+                                    <!-- 라디오 display: none; -->
+                                    <input type="radio" name="slidebtn" id="input_slidebtn1" checked />
+                                    <input type="radio" name="slidebtn" id="input_slidebtn2" />
+                                    <input type="radio" name="slidebtn" id="input_slidebtn3" />
+                                    <input type="radio" name="slidebtn" id="input_slidebtn4" />
+                                    <!-- 슬라이드 보이는 ui -->
+                                    <div class="projScreenshot imgslider_cont">
+
+                                        <!-- 슬라이드콘텐츠(긴 박스) -->
+                                        <div class="projSlideWrap cont_imgbox clearfloat">
+                                            <img src="../img/projectScreenshot_1.png" alt="" />
+                                            <img src="../img/projectScreenshot_2.1.png" alt="" />
+                                            <img src="../img/projectScreenshot_2.2.png" alt="" />
+                                            <img src="../img/projectScreenshot_2.3.png" alt="" />
                                         </div>
+
+                                        <!-- 버튼 왼 -->
+                                        <div class="cont_label_left">
+                                            <div class="cont_label_left_inner">
+                                                <label for="input_slidebtn1"><i class="fa-solid fa-up-long"></i></label>
+                                                <label for="input_slidebtn2"><i class="fa-solid fa-up-long"></i></label>
+                                                <label for="input_slidebtn3"><i class="fa-solid fa-up-long"></i></label>
+                                                <label for="input_slidebtn4"><i class="fa-solid fa-up-long"></i></label>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- 버튼 른 -->
+                                        <div class="cont_label_right">
+                                            <div class="cont_label_right_inner">
+                                                <label for="input_slidebtn1"><i class="fa-solid fa-down-long"></i></label>
+                                                <label for="input_slidebtn2"><i class="fa-solid fa-down-long"></i></label>
+                                                <label for="input_slidebtn3"><i class="fa-solid fa-down-long"></i></label>
+                                                <label for="input_slidebtn4"><i class="fa-solid fa-down-long"></i></label>
+                                            </div>
+                                        </div> 
+
                                     </div>
                                 </div>
+
+
                                 <div class="projPara">
                                     <div class="projParaWrap">
                                         <div>
@@ -158,14 +198,18 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </article>
                 
+
+
                 <!-- 스킬 -->
                 <article class="skills" id="skills">
-                    <div class="aritcleTitle">
+                    <div class="aritcleTitle skillsTitle">
                         <h3>skills</h3>
                     </div>
                     <section class="skillsWrap fixMaxWidth">
@@ -207,9 +251,11 @@
                     </section>
                 </article>
 
+
+
                 <!-- 컨택 & 아카이브 -->
                 <article class="info" id="contact_archive">
-                    <div class="aritcleTitle">
+                    <div class="aritcleTitle infoTitle">
                         <h3>contact & archive</h3>
                     </div>
                     <div class="infoWrap fixMaxWidth">

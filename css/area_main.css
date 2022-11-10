@@ -9,7 +9,7 @@ header {width: 100%; height: auto; background-color: #232025aa; color: #eadff3; 
 .logo {width: 100px;}
 .menu_nav a {color: #eadff3;}
 li {list-style: none;}
-a {text-decoration: none; cursor: pointer;}
+a {text-decoration: none; cursor: pointer; font-size: 1.5rem;}
 .icon i {font-size: 2rem;}
 
 .main {width: 100%; padding-top: 100px;}
@@ -30,39 +30,70 @@ a {text-decoration: none; cursor: pointer;}
 .conInfo i {font-size: 2.5rem; margin: 1.5vh;}
 
 .a-right-Wrap {position: relative;}
-.Image {max-width: 750px; width: 45vw; height: auto; position: absolute; bottom: -79vh; right: 3%;}
+.Image {max-width: 850px; width: 45vw; height: auto; position: absolute; bottom: -84vh; right: 3%;}
 .Image a img {max-width: 100%;}
 .TheresNoSelfi {font-size: 1.3rem; font-weight: 600; top: 2vh; left: 5vw;}
 
+
+
 .aritcleTitle {width: auto; height: auto; max-width: 800px; font-size: 2rem; margin: 0 auto; padding: 6vh 0; text-align: center; font-family: 'Gowun Dodum', sans-serif; font-size: 2.6rem;}
+.skillsTitle, .infoTitle {margin-bottom: 30px;}
+.skillsTitle h3, .infoTitle h3 {margin-top: 25px;}
+
 
 .ownProject {background-color: #cd4d4d; height: auto; padding-bottom: 5%;}
 .pGalWrap {width: 94%; height: auto; margin: 0 auto;}
 .pGalListWrap {display: flex; flex-direction: column;}
-.pGalList {display: flex; height: 75vh; width: 100%; margin: 0 auto; background-color: #cabca6; 
+.pGalList {display: flex; height: 75vh; width: 100%; margin: 0 auto; background-image: url(../img/grey-paper-texture-background.jpg); 
             clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);}
 .projPic {flex-basis: 28%;}
-.projSlideWrap {width: auto; height: auto;}
-.projScreenshot {overflow: hidden; margin: 32% auto; width: 23vw; height: 360px; max-width: 500px; min-width: 440px;}
+.projScreenshot {overflow: hidden; margin: 32% auto; width: 23vw; height: 360px; max-width: 500px; min-width: 440px; position: relative;}
 .projScreenshot img {max-width: 100%; margin: 0 auto;}
+.projSlideWrap {width: auto; height: auto; transition:all 0.9s;}
+
+/* input */
+#input_slidebtn1, #input_slidebtn2, #input_slidebtn3, #input_slidebtn4 {display:none;}
+#input_slidebtn1:checked~.imgslider_cont .cont_imgbox {margin-top:0;}
+#input_slidebtn2:checked~.imgslider_cont .cont_imgbox {margin-top:-85%;}
+#input_slidebtn3:checked~.imgslider_cont .cont_imgbox {margin-top:-176%;}
+#input_slidebtn4:checked~.imgslider_cont .cont_imgbox {margin-top:-264%;}
+/* left right 버튼박스 */
+#imgslider .imgslider_cont {position:relative;}
+.imgslider_cont .cont_label_left, .imgslider_cont .cont_label_right {position:absolute; width:30px; height:40px; top:50%; transform:translate(0, -50%);}
+.cont_label_left_inner label, .cont_label_right_inner label {position:absolute; width:30px; height:40px; top:0;left:0; z-index:1; cursor:pointer; background-color:#bdacf121; border-radius: 50px;}
+.imgslider_cont .cont_label_left {left:0; color: #3a325e; text-align: center; font-size: 1.5rem;}
+.imgslider_cont .cont_label_left .cont_label_left_inner {position:relative; width:30px; height:40px; z-index:2;}
+.imgslider_cont .cont_label_right {right:0; color: #3a325e; text-align: center; font-size: 1.5rem;}
+.imgslider_cont .cont_label_right .cont_label_right_inner {position:relative; width:30px; height:40px; z-index:2;}
+/* left right 버튼실행 */
+#input_slidebtn1:checked~.imgslider_cont .cont_label_left_inner label:nth-child(4) {z-index:2;}
+#input_slidebtn1:checked~.imgslider_cont .cont_label_right_inner label:nth-child(2) {z-index:2;}
+#input_slidebtn2:checked~.imgslider_cont .cont_label_left_inner label:nth-child(1) {z-index:2;}
+#input_slidebtn2:checked~.imgslider_cont .cont_label_right_inner label:nth-child(3) {z-index:2;}
+#input_slidebtn3:checked~.imgslider_cont .cont_label_left_inner label:nth-child(2) {z-index:2;}
+#input_slidebtn3:checked~.imgslider_cont .cont_label_right_inner label:nth-child(4) {z-index:2;}
+#input_slidebtn4:checked~.imgslider_cont .cont_label_left_inner label:nth-child(3) {z-index:2;}
+#input_slidebtn4:checked~.imgslider_cont .cont_label_right_inner label:nth-child(1) {z-index:2;}
 
 .projPara {flex-basis: 72%; border-left: 2px dashed #796049; font-family: 'Gowun Dodum', sans-serif;}
-.projParaWrap {display: flex; flex-wrap: wrap; margin: 1.5vh 0 0 1vw; width: 90%; height: 96%; border: 1px solid #963d3d;}
+.projParaWrap {display: flex; flex-wrap: wrap; margin: 1.5vh 0 0 1vw; width: 90%; height: 96%; border: 2px solid #963d3d; border-radius: 6px;}
 .projParaWrap div {border: 1px solid #963d3d; padding: 1%;}
 .projParaWrap div:first-child {flex-basis: 100%; height: 60%;}
 .projParaWrap div:nth-child(2) {flex-basis: 70%; height: 40%;}
 .projParaWrap div:last-child {flex-basis: 30%; height: 40%;}
 
-.projParaWrap div h3 {font-size: 1.6rem; font-weight: bolder; color: #4d3e31; margin-bottom: 10px;}
+.projParaWrap div h3 {font-size: 1.6rem; font-weight: bolder; color: #732f1e; margin-bottom: 10px;}
 .projParaWrap div p {font-size: 1.1rem; line-height: 3vh; font-weight: bolder; color: #362e27;}
 
 
-.skills {background-color: #c0bb9d;}
+
+.skills {background-color: #c2afa3;}
 .skillsWrap {padding: 0 0 10vh; display: flex; justify-content: space-around;}
 .sOption {flex-basis: 30%; background-color: #dedde0;}
 .programLogos {max-width: 10rem; margin: 2vh auto;}
 .front .programLogos:last-child {max-width: 15rem; margin: 4vh auto 6vh;}
 .programLogos img {margin: 0 auto; max-width: 100%;}
+
 
 
 .info {background-color: #312d45; height: auto;}
@@ -71,11 +102,12 @@ a {text-decoration: none; cursor: pointer;}
 .infoWrap section {flex-basis: 64%; justify-content: space-around; margin: 0 auto; height: auto; width: 95%; background-color: #bcb5ca; box-shadow: 0px 0px 10px 5px #6c7be6; border-radius: 10px;}
 .cANDa {display: flex; width: 90%; margin: 40px auto; flex-wrap: wrap; color: #251c35; font-family: 'Gowun Dodum', sans-serif;}
 .cANDa i {flex-basis: 20%; font-size: 3rem; text-align: center; color: #4e4e94;}
-.cANDa span {flex-basis: 80%; font-size: 1.5rem; line-height: 45px;}
+.cANDa span {flex-basis: 80%; font-size: 1.45rem; line-height: 45px; font-weight: bolder;}
 .space {flex-basis: 20%;}
 .cANDa p {text-align: left; flex-basis: 80%; line-height: 2vh; font-size: 1rem; font-weight: 600; color: #70608d;}
 .contactLink a {color: #251c35;}
-.contactLink a:hover {font-weight: 600; font-size: 1.3rem; color: #1b0b54; transition: 0.6s;}
+.contactLink a:hover {text-shadow: 0px 0px 2px #fbc3ff, 0 0 1em #bba1ed, 0 0 0.2em #dfeffd; font-size: 1.6rem; color: #3352a0; transition: 0.4s;}
+
 
 
 footer {width: 100%; height: 15vh; max-height: 200px; background-color: #1b1a1c; color: #eadff3; display: flex; align-items: center; margin-top: auto;}
@@ -83,7 +115,14 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #1b1a1c;
 
 /* 작은화면 */
 @media all and (max-width: 960px){
-    nav ul li {display: none;}
+    /* .menu_nav {width: 90%; height: 100px; display: flex; justify-content: space-between; margin: 0 auto; align-items: center;} */
+    .menu_nav {flex-direction: column; height: auto;}
+    nav ul {width: 100%; text-align: center;}
+    nav ul li {font-size: 2rem; margin: 1.2vh 0; padding-bottom: 5px;}
+    nav ul li:hover {background-color: #2a2238;}
+    nav ul li:first-child {border-top: 2px solid #1b1a1c;}
+
+    .icon {position: relative;}
     .icon {display: flex; padding-bottom: 7px;}
     
     .mainContent {flex-direction: column-reverse;}
@@ -99,7 +138,7 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #1b1a1c;
     
     .a-right-Wrap {margin: 0 auto;}
     .TheresNoSelfi {font-size: 1.1rem; font-weight: 600; top: 1vh; left: 5vw;}
-    .Image {height: auto; max-width: 94vw; bottom: -52vh; right: 3vw;}
+    .Image {height: auto; max-width: 73vw; bottom: -48vh; right: 3vw; min-width: 440px;}
 
     .aritcleTitle {width: 100%; padding: 3vh 0 0;}
     
@@ -127,12 +166,12 @@ footer {width: 100%; height: 15vh; max-height: 200px; background-color: #1b1a1c;
     .cANDa i {font-size: 2.4rem; text-align: center;}
     .cANDa span {font-size: 1.2rem; line-height: 40px;}
     .cANDa p {text-align: left; line-height: 2vh; font-size: 0.9rem; font-weight: 600;}
+    .contactLink a:hover {font-size: 1.4rem;}
 
 }
 
 /* 중간화면 */
 @media all and (max-width: 1300px){
-    .mainContent {height: 100vh; max-height: 1000px;}
     .Image {width: 570px; right: 20px;}
 }
 
